@@ -1,0 +1,10 @@
+
+<button type="button" class="btn btn-dark btn-block btn-md" (click)='getitems()'>Show Items</button>
+{{itemgetresponse}}
+<div *ngFor="let item of itemgetresponse let i=index">
+  {{i}}
+
+{{item.itemname}}<br>{{item.itemdescription}}<br>{{item.itemprice}}
+</div>
+
+
